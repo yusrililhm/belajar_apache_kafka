@@ -33,3 +33,7 @@
 
 # topic info
 ./bin/kafka-topics.sh --bootstrap-server hoserverst:port --describe --topic name
+
+# routing
+./bin/kafka-console-producer.sh --bootstrap-server host:port --topic name --property "parse.key=true" --property "key.separator={whatever this}"
+./bin/kafka-console-consumer.sh --bootstrap-server host:port --topic name --group name --from-beginning --property "print.key=true"
