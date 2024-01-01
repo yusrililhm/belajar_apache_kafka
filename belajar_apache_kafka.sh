@@ -23,3 +23,13 @@
 # Offset
 # see offset
 ./bin/kafka-consumer-groups.sh --bootstrap-server host:port --all-groups --all-topics --describe
+
+# Partition
+# create topic with partitions
+./bin/kafka-topics.sh --bootstrap-server host:port --create --topic name --partitions number
+
+# change topic already exists
+./bin/kafka-topics.sh --bootstrap-server host:port --alter --topic name --partitions number
+
+# topic info
+./bin/kafka-topics.sh --bootstrap-server hoserverst:port --describe --topic name
