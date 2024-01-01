@@ -19,3 +19,7 @@
 
 # consumer group
 ./bin/kafka-console-consumer.sh --bootstrap-server host:port --topic name --group name --from-beginning
+
+# Offset
+# see offset
+./bin/kafka-consumer-groups.sh --bootstrap-server host:port --all-groups --all-topics --describe
